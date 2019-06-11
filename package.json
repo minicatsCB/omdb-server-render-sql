@@ -1,0 +1,24 @@
+{
+  "name": "omdb-server-render-sql",
+  "version": "1.0.0",
+  "description": "omdb-server-render-sql",
+  "main": "server.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/minicatsCB/omdb-server-render-sql.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/minicatsCB/omdb-server-render-sql/issues"
+  },
+  "homepage": "https://github.com/minicatsCB/omdb-server-render-sql#readme",
+  "dependencies": {}
+}
