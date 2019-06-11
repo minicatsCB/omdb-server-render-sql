@@ -20,5 +20,7 @@
     "url": "https://github.com/minicatsCB/omdb-server-render-sql/issues"
   },
   "homepage": "https://github.com/minicatsCB/omdb-server-render-sql#readme",
-  "dependencies": {}
+  "dependencies": {
+    "mysql": "2.17.1"
+  }
 }
