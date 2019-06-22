@@ -29,7 +29,11 @@ app.get("/movie/:id", (req, res) => {
     });
 });
 
-app.post("/movie/:id/delete", (req, res) => {});
+app.post("/movie/:id/delete", (req, res) => {
+    controller.deleteMovie(req.params.id).then(() => {
+        res.redirect("/");
+    });
+});
 
 app.get("/movie/:id/edit", (req, res) => {
     controller.getMovieById(req.params.id).then(movie => {
