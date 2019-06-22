@@ -1,17 +1,17 @@
-<div id="<%= movie.key %>">
+<div id="<%= movie.id %>">
     <div>
         <div class="row my-3">
             <div class="col-lg-12">
                 <h1>
-                    <%= movie.value.title %>
+                    <%= movie.title %>
                 </h1>
-                <img class="w-100 rounded" src="<%= movie.value.poster %>" alt="movie_poster">
+                <img class="w-100 rounded" src="<%= movie.poster %>" alt="movie_poster">
             </div>
-            <div class="movie-options col-lg-12" data-key="<%= movie.key %>">
+            <div class="movie-options col-lg-12" data-key="<%= movie.id %>">
                 <div class="my-1">
                     <button class="btn btn-light w-100" type="button">
                         <i class="fas fa-info-circle"></i>
-                        <a href="/movie/<%= movie.key %>">View details</a>
+                        <a href="/movie/<%= movie.id %>">View details</a>
                     </button>
                 </div>
 
@@ -19,7 +19,7 @@
                     <div class="my-1">
                         <button class="btn btn-light w-100" type="button">
                             <i class="fas fa-edit"></i>
-                            <a href="/movie/<%= movie.key %>/edit">Edit</a>
+                            <a href="/movie/<%= movie.id %>/edit">Edit</a>
                         </button>
                     </div>
                 <% } else{ %>
@@ -31,7 +31,7 @@
                     </div>
                 <% } %>
 
-                <form id="search-movie-form" method="POST" action="/movie/<%= movie.key %>/delete">
+                <form id="search-movie-form" method="POST" action="/movie/<%= movie.id %>/delete">
                     <div class="my-1">
                         <button class="btn btn-light w-100" type="submit">
                             <i class="fas fa-trash-alt"></i>
