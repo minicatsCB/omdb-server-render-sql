@@ -12,6 +12,9 @@ app.use(express.urlencoded({
 }));
 
 app.get("/", (req, res) => {
+    let movies = controller.getAllMovies().then(movies => {
+        res.render("index", { movies: movies});
+    });
 });
 
 app.get("/create", (req, res) => {
