@@ -14,7 +14,11 @@ app.use(express.urlencoded({
 app.get("/", (req, res) => {
 });
 
-app.get("/create", (req, res) => {});
+app.get("/create", (req, res) => {
+    controller.saveMovie(req.query.title).then(movie => {
+        res.render("index", { movies: [movie] });
+    });
+});
 
 app.get("/movie/:id", (req, res) => {});
 
